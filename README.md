@@ -8,12 +8,6 @@
 o intuito é entender e aprender todo fluxo de navegação de telas, empilhamento de pilhas, utilização do mais válido e utilizado pelas empresas o  package para persistencia de dados Hive e SharedPreferences com forte aprendizado em Design pattern, vamos migrar toda estruta para MVC na adquirição de conhecimentos em model, controller, view, muito mais.
 
 
-
-
-
-##  Started
-projeto para criação de uma aplicação IMC, para iniciantes em flutter do zero ao avançado.
-
 ## Tecnologias e objetivos
   - Hive (para persistencia de dados)
   - SharedPreferences (para persistencia de dados Login/Usuario)
