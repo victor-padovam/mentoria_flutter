@@ -1,16 +1,29 @@
-# mentoria_flutter
+# Mentoris Flutter \ IMC
 
-A new Flutter project.
+## Versao do flutter 
+  - 2.10.5 
 
-## Getting Started
+##  Started
+projeto para criação de uma aplicação IMC, para iniciantes em flutter do zero ao avançado.
 
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
-
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Tecnologias e objetivos
+  - Hive (para persistencia de dados)
+  - SharedPreferences (para persistencia de dados Login/Usuario)
+  - SetState
+  - Stateles/Statefull
+  - cool alert
+  - listView para lista
+  - Conceito de MVC - model, view, controller
+  - entendimento de Refatoração, identação.
+  - logica de programação if/else  (Dart)
+  - Front-End utilizando MaterialDesing
+  - Refatoração do front-end entendimento entre divisão de regra de negocio e regra de view.
+  - (Cache) Entendimento em salvar dados no chace(Hive) e manipulação de dados.
+  - (Cache) Entendimento nas modificações do model para adequação ao Hive
+  - criação de repositories para recebimento de dados local e externo.
+  - conhecimento em criar componentes
+  - (Login) Autenticação do usuario com email/senha (SharedPreferences)
+  - (Login) Deslogar usuario.
+  - FutureBuilder para carregamento de dados async 
+  - entedimento de metodos async/await/future
+  - Dart e null-safety
