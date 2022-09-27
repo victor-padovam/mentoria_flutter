@@ -5,7 +5,7 @@
 
 ## Projeto
   - O objetivo do projeto é na criação de um produto que realiza o calculo IMC do usuario (indice de massa corporal),
-o intuito é entender e aprender todo fluxo de navegação de telas, empilhamento de pilhas, utilização do mais avalido e utilizado pelas empresas o  package para persistencia de dados Hive e SharedPreferences com forte aprendizado em Design pattern, vamos migrar toda estruta para MVC na adquiração de conhecimentos em model, controller, view.
+o intuito é entender e aprender todo fluxo de navegação de telas, empilhamento de pilhas, utilização do mais avalido e utilizado pelas empresas o  package para persistencia de dados Hive e SharedPreferences com forte aprendizado em Design pattern, vamos migrar toda estruta para MVC na adquiração de conhecimentos em model, controller, view, muito mais.
 
 
 
