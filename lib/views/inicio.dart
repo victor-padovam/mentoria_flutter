@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+import '../repositories/local_data/busca_historico.dart';
 import '../shared/layout_dos_card.dart';
 import 'coleta/form_coleta.dart';
 
@@ -34,7 +35,13 @@ class InicioScreen extends StatelessWidget {
               ),
               children: [
                 GestureDetector(
-                  onTap: () {},
+                  onTap: () {
+                    Navigator.of(context).push(
+                      MaterialPageRoute(
+                        builder: (context) => BuscaHitorico(),
+                      ),
+                    );
+                  },
                   child: layoutDosCard(
                     'Hitorico',
                     Icons.history,

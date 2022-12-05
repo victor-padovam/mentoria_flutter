@@ -136,10 +136,11 @@ class _FormColetaState extends State<FormColeta> {
                   );
 
                   if (saveBox) {
-                     Navigator.of(context).push(
+                    Navigator.of(context).pushAndRemoveUntil(
                       MaterialPageRoute(
                         builder: (context) => InicioScreen(),
                       ),
+                      (Route<dynamic> route) => false,
                     );
                   }
                 },
