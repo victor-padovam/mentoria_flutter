@@ -20,6 +20,17 @@ class InicioScreen extends StatelessWidget {
             color: Colors.white,
           ),
         ),
+        actions: [
+          Padding(
+            padding: EdgeInsets.only(right: 15),
+            child: IconButton(
+              onPressed: () {},
+              icon: Icon(
+                Icons.logout,
+              ),
+            ),
+          ),
+        ],
       ),
       body: Container(
         key: key,
