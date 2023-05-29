@@ -1,14 +1,19 @@
 import 'package:flutter/material.dart';
+import 'package:mentoria_flutter/models/usuario.dart';
+import 'package:mentoria_flutter/repositories/local_data/cache/user_login_shared_preferences.dart';
+import 'package:mentoria_flutter/views/login/login_screen.dart';
 
 import '../repositories/local_data/busca_historico.dart';
 import '../shared/layout_dos_card.dart';
 import 'coleta/form_coleta.dart';
 
 class InicioScreen extends StatelessWidget {
-  const InicioScreen({Key? key}) : super(key: key);
+  final Usuario usuario;
+  const InicioScreen(this.usuario, {Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
+    UserLoginSharedPreferences userLoginSP = UserLoginSharedPreferences();
     return Scaffold(
       backgroundColor: Colors.indigo[100],
       appBar: AppBar(
@@ -24,7 +29,14 @@ class InicioScreen extends StatelessWidget {
           Padding(
             padding: EdgeInsets.only(right: 15),
             child: IconButton(
-              onPressed: () {},
+              onPressed: () async {
+                await userLoginSP.limpaUserLogin(usuario);
+                Navigator.of(context).pushAndRemoveUntil(
+                    MaterialPageRoute(
+                      builder: (context) => LoginScreen(),
+                    ),
+                    (Route<dynamic> route) => false);
+              },
               icon: Icon(
                 Icons.logout,
               ),

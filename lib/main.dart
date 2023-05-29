@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:mentoria_flutter/repositories/local_data/busca_login.dart';
 import 'package:mentoria_flutter/repositories/local_data/cache/hive_config.dart';
-import 'package:mentoria_flutter/views/inicio.dart';
 
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -18,7 +18,7 @@ class MentoriaFlutter extends StatelessWidget {
         theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: InicioScreen(),
+      home: BuscaLogin(),
     );
   }
 }

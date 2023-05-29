@@ -1,6 +1,8 @@
 import 'package:cool_alert/cool_alert.dart';
 import 'package:flutter/material.dart';
 import 'package:mentoria_flutter/controller/coleta_controller.dart';
+import 'package:mentoria_flutter/models/usuario.dart';
+import 'package:mentoria_flutter/repositories/local_data/cache/user_login_shared_preferences.dart';
 import 'package:mentoria_flutter/views/inicio.dart';
 
 class FormColeta extends StatefulWidget {
@@ -9,6 +11,8 @@ class FormColeta extends StatefulWidget {
 }
 
 class _FormColetaState extends State<FormColeta> {
+  UserLoginSharedPreferences userLoginSharedPreferences =
+      UserLoginSharedPreferences();
   final _formKey = GlobalKey<FormState>();
   TextEditingController pesoController = TextEditingController();
   TextEditingController alturaController = TextEditingController();
@@ -136,9 +140,17 @@ class _FormColetaState extends State<FormColeta> {
                   );
 
                   if (saveBox) {
+                    Map buscaDados =
+                        await userLoginSharedPreferences.buscaDadosSalvos();
+                    var userLogin = Usuario(
+                      email: buscaDados['email'],
+                      senha: buscaDados['senha'],
+                      estaLogado: buscaDados['estaLogado'],
+                    );
+
                     Navigator.of(context).pushAndRemoveUntil(
                       MaterialPageRoute(
-                        builder: (context) => InicioScreen(),
+                        builder: (context) => InicioScreen(userLogin),
                       ),
                       (Route<dynamic> route) => false,
                     );

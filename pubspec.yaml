@@ -16,6 +16,8 @@ dependencies:
   cupertino_icons: ^1.0.2
   path_provider: ^2.0.2
   cool_alert: ^1.1.0
+  lottie: ^1.0.0
+  shared_preferences: ^2.0.0
 
 dev_dependencies:
   flutter_test:
@@ -25,6 +27,11 @@ dev_dependencies:
   build_runner: ^1.12.2
   hive_generator: ^1.0.1
   flutter_lints: ^1.0.0
+  flutter_launcher_icons: ^0.9.1
+flutter_icons:
+    android: true
+    ios: true
+    image_path: "assets/icone.png"
 
 
 flutter:
@@ -32,6 +39,8 @@ flutter:
   uses-material-design: true
 
   # To add assets to your application, add an assets section, like this:
+  assets:
+    - assets/
   # assets:
   #   - images/a_dot_burr.jpeg
   #   - images/a_dot_ham.jpeg

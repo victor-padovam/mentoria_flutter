@@ -1,7 +1,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.mentoria_flutter">
    <application
-        android:label="mentoria_flutter"
+        android:label="Calculo IMC"
         android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher">
         <activity
